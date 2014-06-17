@@ -1,11 +1,13 @@
 
-
 $(document).ready(function() {
   playMusic();
+ 
+    $('.opening').fadeIn().delay(1000).fadeOut();
+    $('.instructions').delay(2000).fadeIn();
   $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
-    $('.instructions').fadeOut();
+
   })
 
   .mouseleave(function() {
